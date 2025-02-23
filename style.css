@@ -1,13 +1,21 @@
-*{
+* {
     margin: 0;
-    box-sizing: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+    @font-face {
+        font-family: 'Inter';
+        src: url(fonte/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+    }
 
 body {
-    background-color: #caf0f8;
+    /* background-color: #caf0f8; */
+    background-color: #90e0ef;
+    font-family: Arial, sans-serif;
 }
 
+/* banner */
 .banner {
     width: 100%;
     height: 90px;
@@ -19,125 +27,176 @@ body {
     font-size: 20px;
 }
 
-.subBanner{
+/* subBanner */
+.subBanner {
     width: 100%;
     height: 50px;
     background-color: #0077b6;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
 }
 
-.subBanner a{
+.subBanner a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 10px;
+    transition: transform 0.3s ease;
 }
 
-.container {
-    color: #1e3148;
-    margin: 20px;
+.subBanner a:hover {
+    transform: scale(1.2); 
 }
 
-.origem {
-    margin-top: 100px;
+/* origem e evolucao ////////////////////////////////////*/
+#origem h1, #evolucao h1 {
+    margin-bottom: 5%;
+    font-size: 25px;
+    color: #333333;
+}
+
+#origem, #evolucao {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    background-color: #90e0ef;
+    padding: 20px;
+}
+
+#origem div, #evolucao div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 30px;
 }
 
-.origem div{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#origem p, #evolucao p {
+    width: 55%; 
+    text-align: justify; 
+    color: #333333;
 }
 
-.origem img{
-    width: 50%;
-    margin: 0 0 0 30px;
+#origem img, #evolucao img {
+    width: 60%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
 }
 
-.origem h1 {
-    margin-right: 650px;
+#origem img:hover, #evolucao img:hover {
+    transform: scale(1.05);
 }
 
-.evolucao {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+/* regras //////////////////////////////////////////////////////*/
 
-.evolucao div{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#regras h1 {
+    color: #333333;
+    font-size: 25px;
+    padding: 20px;
 }
-
-.evolucao img{
-    width: 50%;
-    margin: 0 30px 0 0;
-}
-
-.evolucao h1 {
+#regras {
     width: 100%;
-    text-align: end;
+    height: 66%;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #caf0f8;
 }
 
-/*=========================================*/
-
-.regras {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* background-color: yellowgreen; */
-    margin-top: 100px;
-}
-
-.regras h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.regras ul {
-    gap: 1em;
-    height: 90%;
-    /* background-color: violet; */
+#regras ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: space-evenly;
-    padding: 3em;
+    padding: 20px;
 }
 
-.regras li {
-    padding: 0.5em;
-    width: 25%;
+#regras li {
+    width: 25%; 
+    text-align: justify;
     list-style: none;
-    /* color: white; */
-    /* background-color: brown; */
-
+    padding: 10px;
+    color: #333333;
+    margin: 10px;
+    transition: all 0.3s ease;
 }
 
-.campeonatos {
-    width: 100%;
-    background-color: chartreuse;
-    
+
+#regras li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 20px; 
+    transform: scale(1.1); 
 }
 
+/* campeonatos ////////////////////////////////////////////////////////////*/
+
+#campeonatos h1 {
+    color: #333333;
+    margin-bottom: 5%;
+}
+
+#campeonatos{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    background-color: #90e0ef;
+}
+
+#campeonatos h2{
+    margin-bottom: 3%;
+    color: #333333;
+}
+
+#campeonatos div {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 5%;
+}
+
+#campeonatos p {
+    width: 60%; 
+    text-align: justify;
+    color: #333333;
+}
+
+#campeonatos img {
+    width: 30%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+#campeonatos img:hover {
+    transform: scale(1.05);
+}
+
+/* idolos /////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/* rodape ////////////////////////////////////////////////////////////////*/
 .rodape {
     width: 100%;
     height: 80px;
     background-color: #023e8a;
 }
 
-@media (max-width: 768px){  /*versão mobile*/
-    .regras li{
+/* responsividade //////////////////////////////////////////////////////////////*/
+@media (max-width: 768px) {
+    #origem img, #evolucao img, #idolos img {
+        width: 90%;
+    }
+
+    #regras li {
+        width: 45%;
+    }
+
+    #campeonatos img {
         width: 45%;
     }
 }
