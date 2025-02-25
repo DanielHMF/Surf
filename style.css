@@ -200,6 +200,7 @@ body {
 /* idolos /////////////////////////////////////////////////////////////////////////*/
 #idolos h1 {
     color: #48a5ad;
+    margin-bottom: 0.5em;
 }
 
 #idolos{
@@ -213,7 +214,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+
 }
 
 #idolos div div{
@@ -221,13 +223,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 25%;
     margin: 1em;
+    text-align: justify;
+}
+
+#idolos h2{
+    margin-bottom: 0.6em;
 }
 
 #idolos img{
     width: 250px;
     margin: 1em;
+    border-radius: 10px; 
 }
 
 
