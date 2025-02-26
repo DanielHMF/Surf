@@ -43,7 +43,6 @@ body {
     justify-content: space-around;
     align-items: center;
     border-top: #0e273d 1px solid;
-   
 }
 
 .subBanner a {
@@ -60,7 +59,6 @@ body {
 
 .imagem-surf img{
     width: 100%;
-    height: ;
 }
 .imagem-surf{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
